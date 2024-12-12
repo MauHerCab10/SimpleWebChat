@@ -1,0 +1,164 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/*----------------------------------------------------------------------------*/
+.row {
+    margin-bottom: 0.2%;
+}
+
+.textbox {
+    background-color: lightcyan;
+    margin-right: 0.7%;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.button {
+    color: blue;
+    font-weight: bold;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    margin-right: 0.2%;
+}
+
+.button:hover {
+    background-color: greenyellow;
+}
+
+#sendButton {
+    font-size: 16px;
+    padding: 8px 15px 8px 15px;
+}
+
+
+/*deshabilitado*/
+#sendButton.disabled {
+    color: dimgray;
+    cursor: not-allowed;
+}
+
+/*habilitado*/
+#sendButton:not(.disabled) {
+    cursor: pointer;
+}
+
+/*deshabilitado:Hover*/
+#sendButton.disabled:hover {
+    background-color: #e5e5e5;
+    cursor: not-allowed;
+}
+
+/*habilitado:Hover*/
+#sendButton:not(.disabled):hover {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+
+#tbMessage {
+    width: 52%;
+}
+
+.textbox:focus {
+    background-color: khaki;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 85%;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 85%;
+}
+
+:-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 85%;
+}
+
+input[type="text"][title]:hover, textarea[title]:hover {
+    position: relative;
+    cursor: help;
+}
+
+input[type="text"][title]:hover::after, textarea[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+}

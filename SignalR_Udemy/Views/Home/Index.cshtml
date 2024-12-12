@@ -1,0 +1,48 @@
+﻿@page
+<div class="container">
+    <div class="row">&nbsp;</div>
+
+    <div class="row">
+        <input type="text" class="textbox" id="tbUserFrom" placeholder="Mi Usuario" title="Digita tu usuario para que los demás vean y sepan quién les escribe" />
+        <input type="text" class="textbox" id="tbUserTo" placeholder="Usuario Destino" title="Digita el usuario destino que recibirá tus mensajes&#10;(solo funciona si el usuario destino se ha registrado al Chat Privado)" />
+        <input type="text" class="textbox" id="tbRoom" placeholder="Sala Destino" title="Digita el nombre de la sala destino a donde desees enviar tus mensajes&#10;(solo funciona si el(los) usuario(s) destino se ha(n) registrado a esa Sala)" />
+    </div>
+    <div class="row">
+        <textarea class="textbox" id="tbMessage" placeholder="Escribe aquí tu mensaje..." title="Escribe tu mensaje aquí&#10;(en caso de no haber especificado ningún Usuario Destino ni ninguna Sala, el mensaje se enviará a todos los usuarios de manera global)"></textarea>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <input type="text" class="textbox" id="tbToogleRoom" placeholder="Unirme a una Sala" title="Digita el nombre de la sala a la cual deseas unirte para empezar a chatear con los usuarios que están registrados en dicha sala" />
+        <input type="button" class="button" id="btnJoinRoom" value="Entrar" title="Haz clic para entrar a la sala" />
+        <input type="button" class="button" id="btnLeaveRoom" value="Salir" title="Haz clic para salir de la sala" />
+    </div>
+    <div class="row">
+        <input type="text" class="textbox" id="tbJoinPrivateChat" placeholder="Unirme a un Chat Privado" title="Digita tu nombre de usuario para registrarte al chat privado y que otro usuario pueda escribirte únicamente a tí" />
+        <input type="button" class="button" id="btnJoinPrivateChat" value="Unirse" title="Haz clic para unirte al chat privado" />
+    </div>
+
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div>
+            <input type="button" class="button" id="sendButton" value="Enviar Mensaje" title="Haz clic para enviar tu mensaje" />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <label id="printInfo"></label>
+    </div>
+</div>
+
+
+<script src="~/lib/signalr/signalr.js"></script>
+<script src="~/js/chat.js"></script>
